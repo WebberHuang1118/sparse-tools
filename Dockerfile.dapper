@@ -22,7 +22,7 @@ ENV GOLANG_ARCH_amd64=amd64 GOLANG_ARCH_arm=armv6l GOLANG_ARCH=GOLANG_ARCH_${ARC
 RUN wget -O - https://storage.googleapis.com/golang/go1.17.10.linux-${!GOLANG_ARCH}.tar.gz | tar -xzf - -C /usr/local && \
     go get github.com/rancher/trash && GO111MODULE=on go get golang.org/x/lint/golint@v0.0.0-20210508222113-6edffad5e616
 
-ENV DAPPER_SOURCE /go/src/github.com/longhorn/sparse-tools
+ENV DAPPER_SOURCE /go/src/github.com/WebberHuang1118/sparse-tools
 ENV DAPPER_OUTPUT ./bin
 ENV DAPPER_DOCKER_SOCKET true
 ENV DAPPER_ENV IMAGE REPO VERSION TAG
